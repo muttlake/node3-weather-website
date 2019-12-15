@@ -5,7 +5,7 @@ const messageOne = document.getElementById('message-1');
 const messageTwo = document.getElementById('message-2');
 
 const getWeather = (searchTerm) => {
-    const url = 'http://localhost:3000/weather?address=' +encodeURIComponent(searchTerm);
+    const url = '/weather?address=' +encodeURIComponent(searchTerm);
     fetch(url)
     .then(
         (response) => {
